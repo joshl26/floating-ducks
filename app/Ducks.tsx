@@ -81,7 +81,7 @@ function Duck({
   // we don't need high resolution for objects in the distance. The model contains 3 decimated meshes ...
   return (
     // <Detailed ref={ref} distances={[0, 65, 80]}>
-    <group ref={ref} dispose={null}>
+    <group receiveShadow castShadow ref={ref} dispose={null}>
       <mesh
         geometry={nodes.Cube002.geometry}
         material={materials["Rubber Duck Yellow"]}
